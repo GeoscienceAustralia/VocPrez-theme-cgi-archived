@@ -8,7 +8,7 @@ cp $VP_THEME_HOME/templates/* $VP_HOME/vocprez/view/templates
 echo "Config: creating VocPrez config with $VP_THEME_HOME/config.py"
 echo "Alter config.py to include variables"
 sed 's#$SPARQL_ENDPOINT#'"$SPARQL_ENDPOINT"'#' $VP_THEME_HOME/config.py > $VP_THEME_HOME/config_updated.py
-sed -i 's#$SYSTEM_URI_BASE#'"$SYSTEM_URI_BASE"'#' $VP_THEME_HOME/config_updated.py
+sed -i 's#$SYSTEM_BASE_URI#'"$SYSTEM_BASE_URI"'#' $VP_THEME_HOME/config_updated.py
 if [ -z "$SPARQL_USERNAME" ]
 then
       sed -i 's#$SPARQL_USERNAME#None#' $VP_THEME_HOME/config_updated.py

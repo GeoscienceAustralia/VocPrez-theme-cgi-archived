@@ -26,7 +26,7 @@ def vocabularies_set(set_id):
     return VocabulariesRenderer(
         request,
         this_vocs,
-        config.SYSTEM_URI_BASE,
+        config.SYSTEM_BASE_URI,
         config.VOCS_URI,
         config.VOCS_TITLE,
         config.VOCS_DESC
